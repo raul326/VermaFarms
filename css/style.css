@@ -1,0 +1,205 @@
+/*------------------------------------------------------------------
+	[Table of Contents]
+	1.	Fonts
+	2.	Global
+	3.	Header
+	4.	Top Menu
+	5.	Banner
+	6.	Content
+	7.	Footer
+	8.	Gallery
+	9.	Pagination
+
+	
+
+	[Color codes]
+	Background:	#262626 (Dark Grey)
+	Content:	#3b3b3b (Light Black)
+	Header h1:	#a70d00 (Dark Red)
+	a (standard):	#0046e4 (Bright Blue)
+	a (visited):	#009ce4 (Lighter Blue)
+
+	[Typography]
+	Body copy:	12px/1.3 Verdana, Arial, Helvetica, sans-serif;
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+	[ 1 Fonts ]
+-------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap");
+/*------------------------------------------------------------------
+	[ 2 Global ]
+-------------------------------------------------------------------*/
+html {
+  overflow-y: scroll; }
+
+body {
+  color: #998c7a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0 0 20px;
+  font-weight: normal; }
+
+a {
+  color: #D61B5F; }
+
+a:hover {
+  color: #fff; }
+
+a:hover,
+a:focus {
+  text-decoration: none; }
+
+input,
+button,
+textarea,
+select {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; }
+
+pre,
+tt,
+code,
+kbd,
+samp,
+var {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; }
+
+ul li {
+  list-style-type: none; }
+
+ol ol li {
+  list-style-type: lower-alpha; }
+
+ol ol ol li {
+  list-style-type: lower-roman; }
+
+q {
+  font-style: italic; }
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #333;
+  cursor: help; }
+
+textarea {
+  resize: none;
+  overflow-y: auto; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+/*----------------------------------------
+	[ 3 Header ]
+------------------------------------------*/
+.btn {
+  background: #000;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  padding: 20px 25px;
+  width: 100%;
+  max-width: 280px; }
+
+.header-banner-wrapper {
+  background: url(../images/homepage-bg-edit.jpg) no-repeat center center;
+  background-size: cover; }
+  .header-banner-wrapper .navbar-nav li a {
+    color: #998c7a;
+    font-size: 16px; }
+  .header-banner-wrapper .navbar-nav li :hover {
+    color: #443636; }
+
+.header-banner-wrapper .banner {
+  padding: 100px 0 80px; }
+  .header-banner-wrapper .banner .banner-txt-wrap {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 30px; }
+    .header-banner-wrapper .banner .banner-txt-wrap h1 {
+      color: #443636;
+      font-size: 32px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900; }
+    .header-banner-wrapper .banner .banner-txt-wrap p {
+      color: #998c7a;
+      font-size: 18px; }
+    .header-banner-wrapper .banner .banner-txt-wrap a.btn {
+      background: #f6914e;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15); }
+    .header-banner-wrapper .banner .banner-txt-wrap a.btn:hover {
+      color: #fff;
+      background: #da1e23; }
+
+.right-nav ul {
+  list-style-type: none;
+  margin: 0; }
+  .right-nav ul li {
+    float: left; }
+    .right-nav ul li a {
+      color: #998c7a;
+      font-size: 16px; }
+    .right-nav ul li :hover {
+      color: #443636; }
+    .right-nav ul li #cart-count img {
+      width: 37px;
+      height: 37px; }
+
+/*----------------------------------------
+benefits-wrapper section
+----------------------------------------*/
+.benefits-wrapper {
+  padding: 100px 0; }
+  .benefits-wrapper h2 {
+    color: #443636;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    padding-bottom: 40px; }
+  .benefits-wrapper .card {
+    padding: 0;
+    border: 0;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 20px 10px rgba(220, 207, 198, 0.4);
+    margin-bottom: 40px; }
+    .benefits-wrapper .card .card-body {
+      background: #fff;
+      bottom: -10px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      border-radius: 0 0 37px 37px; }
+      .benefits-wrapper .card .card-body p {
+        color: #443636;
+        font-size: 18px;
+        padding: 10px 50px;
+        text-align: center; }
+  .benefits-wrapper .benefits-bottom-txt {
+    padding-top: 100px; }
+    .benefits-wrapper .benefits-bottom-txt h4 {
+      color: #443636;
+      font-weight: 600;
+      line-height: 1.4em; }
+
+@media (min-width: 992px) {
+  .header-banner-wrapper .banner {
+    padding: 180px 0 320px; }
+    .header-banner-wrapper .banner .banner-txt-wrap {
+      font-family: 'Poppins', sans-serif;
+      text-align: left;
+      padding-top: 0px; }
+      .header-banner-wrapper .banner .banner-txt-wrap h1 {
+        color: #443636;
+        font-size: 46px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900; } }
+
+/*# sourceMappingURL=style.css.map */
